@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.net.Uri
 import androidx.navigation.Navigation
 import com.example.frfinalproject.databinding.FragmentInvestmentBinding
+import kotlin.math.pow
 
 
 class InvestmentFragment : Fragment() {
@@ -43,8 +44,20 @@ class InvestmentFragment : Fragment() {
         super.onStart()
         arguments?.let{
             val args = InvestmentFragmentArgs.fromBundle(it)
-            binding.tvFiveYearsValue.text = args.message
+            val initialInvestment = args.message.toFloat()
+
+            val growthRate = 0.1f
+
+            binding.tvOneYearValue.text = calculateFutureValue(initialInvestment,growthRate, 1).toString()
+            binding.tvFiveYearsValue.text = calculateFutureValue(initialInvestment, growthRate, 5).toString()
+            binding.tvTenYearsValue.text = calculateFutureValue(initialInvestment, growthRate, 10).toString()
+            binding.tvTwentyYearsLabel.text = calculateFutureValue(initialInvestment, growthRate, 20).toString()
+            binding.tvThirtyYearsLabel.text = calculateFutureValue(initialInvestment, growthRate, 30).toString()
         }
+    }
+
+    private fun calculateFutureValue(investment: Float, annualGrowthRate: Float, years: Int): Float {
+        return investment * (1 + annualGrowthRate).pow(years)
     }
 
 
