@@ -51,8 +51,8 @@ class InvestmentFragment : Fragment() {
             binding.tvOneYearValue.text = calculateFutureValue(initialInvestment,growthRate, 1).toString()
             binding.tvFiveYearsValue.text = calculateFutureValue(initialInvestment, growthRate, 5).toString()
             binding.tvTenYearsValue.text = calculateFutureValue(initialInvestment, growthRate, 10).toString()
-            binding.tvTwentyYearsLabel.text = calculateFutureValue(initialInvestment, growthRate, 20).toString()
-            binding.tvThirtyYearsLabel.text = calculateFutureValue(initialInvestment, growthRate, 30).toString()
+            binding.tvTwentyYearsValue.text = calculateFutureValue(initialInvestment, growthRate, 20).toString()
+            binding.tvThirtyYearsValue.text = calculateFutureValue(initialInvestment, growthRate, 30).toString()
         }
     }
 

@@ -19,68 +19,73 @@
     <TextView
         android:id="@+id/tvOneYearLabel"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="36dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="116dp"
         android:text="One Year:"
-        app:layout_constraintBottom_toTopOf="@id/tvFiveYearsLabel"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvPageTitle"
-        app:layout_constraintVertical_chainStyle="spread_inside" />
+        app:layout_constraintTop_toBottomOf="@id/tvPageTitle" />
 
     <TextView
         android:id="@+id/tvOneYearValue"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/tvOneYearLabel"
+        app:layout_constraintBottom_toBottomOf="@id/tvOneYearLabel"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/tvOneYearLabel"
         app:layout_constraintTop_toTopOf="@id/tvOneYearLabel"
-        app:layout_constraintBottom_toBottomOf="@id/tvOneYearLabel" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/tvFiveYearsLabel"
+        android:id="@+id/tvTenYearsLabel"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="28dp"
-        android:text="Five Years:"
-        app:layout_constraintBottom_toTopOf="@id/tvTenYearsLabel"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="40dp"
+        android:text="Ten Years:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvOneYearLabel" />
+        app:layout_constraintTop_toBottomOf="@id/tvFiveYearsLabel" />
 
     <TextView
         android:id="@+id/tvFiveYearsValue"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/tvFiveYearsLabel"
+        app:layout_constraintBottom_toBottomOf="@id/tvFiveYearsLabel"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/tvFiveYearsLabel"
         app:layout_constraintTop_toTopOf="@id/tvFiveYearsLabel"
-        app:layout_constraintBottom_toBottomOf="@id/tvFiveYearsLabel" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/tvTenYearsLabel"
+        android:id="@+id/tvFiveYearsLabel"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="32dp"
-        android:text="Ten Years:"
-        app:layout_constraintBottom_toTopOf="@id/tvTwentyYearsLabel"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="40dp"
+        android:text="Five Years:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvFiveYearsLabel" />
+        app:layout_constraintTop_toBottomOf="@id/tvOneYearLabel" />
 
     <TextView
         android:id="@+id/tvTenYearsValue"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/tvTenYearsLabel"
+        app:layout_constraintBottom_toBottomOf="@id/tvTenYearsLabel"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/tvTenYearsLabel"
         app:layout_constraintTop_toTopOf="@id/tvTenYearsLabel"
-        app:layout_constraintBottom_toBottomOf="@id/tvTenYearsLabel" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/tvTwentyYearsLabel"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="40dp"
         android:text="Twenty Years:"
-        app:layout_constraintBottom_toTopOf="@id/tvThirtyYearsLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTenYearsLabel" />
 
@@ -90,36 +95,41 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toEndOf="@id/tvTwentyYearsLabel"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintTop_toTopOf="@id/tvTwentyYearsLabel"
-        app:layout_constraintBottom_toBottomOf="@id/tvTwentyYearsLabel" />
-
-    <TextView
-        android:id="@+id/tvThirtyYearsLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginStart="80dp"
-        android:text="Thirty Years:"
-        app:layout_constraintBottom_toTopOf="@id/btnBack"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTwentyYearsLabel" />
+        app:layout_constraintBottom_toBottomOf="@id/tvTwentyYearsLabel"
+        app:layout_constraintVertical_bias="1.0"/>
 
     <TextView
         android:id="@+id/tvThirtyYearsValue"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/tvThirtyYearsLabel"
+        app:layout_constraintBottom_toBottomOf="@id/tvThirtyYearsLabel"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/tvThirtyYearsLabel"
         app:layout_constraintTop_toTopOf="@id/tvThirtyYearsLabel"
-        app:layout_constraintBottom_toBottomOf="@id/tvThirtyYearsLabel" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvThirtyYearsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="40dp"
+        android:text="Thirty Years:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTwentyYearsLabel" />
 
     <Button
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
         android:text="Back"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/tvThirtyYearsValue" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
