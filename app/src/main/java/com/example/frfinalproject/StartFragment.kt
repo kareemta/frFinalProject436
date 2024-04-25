@@ -34,7 +34,13 @@ class StartFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnSubmit.setOnClickListener{
-            Navigation.findNavController(it).navigate(R.id.startToInvestment)
+
+            val action : StartFragmentDirections.StartToInvestment =
+                StartFragmentDirections.startToInvestment()
+
+            action.setMessage(binding.etInvestment.text.toString())
+
+            Navigation.findNavController(it).navigate(action)
         }
     }
 

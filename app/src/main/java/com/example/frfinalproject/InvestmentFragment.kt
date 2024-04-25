@@ -39,5 +39,13 @@ class InvestmentFragment : Fragment() {
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+        arguments?.let{
+            val args = InvestmentFragmentArgs.fromBundle(it)
+            binding.tvFiveYearsValue.text = args.message
+        }
+    }
+
 
 }

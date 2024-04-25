@@ -22,5 +22,9 @@
         <action
             android:id="@+id/investmentToStart"
             app:destination="@id/startFragment" />
+        <argument
+            android:name="Message"
+            app:argType="string"
+            android:defaultValue="0.00" />
     </fragment>
 </navigation>
